@@ -5,7 +5,7 @@ body {
 header {
   width: 80%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 1.25%;
   background: darkgreen;
   overflow: hidden;
 }
@@ -28,7 +28,7 @@ nav ul {
 nav ul li {
   display: inline;
   float: left;
-  margin: 15px;
+  margin: 1.875%;
 }
 
 nav ul li a {
@@ -39,7 +39,7 @@ nav ul li a {
 section {
   width: 80%;
   margin: 0 auto;
-  padding: 5px;
+  padding: 0.625%;
   border: 5px solid black;
   overflow: hidden;
 }
@@ -51,7 +51,7 @@ article h3 {
 }
 
 dd {
-  margin-bottom: 10px;
+  margin-bottom: 1.25%;
 }
 
 dt {
@@ -62,8 +62,8 @@ dt {
 article {
   width: 90%;
   height: auto;
-  margin: 20px 10px;
-  padding: 20px;
+  margin: 2.5% 1.25%;
+  padding: 2.5%;
 }
 
 #pet1 {
@@ -84,18 +84,18 @@ article {
 aside {
   clear: both;
   height: auto;
-  padding: 10px;
+  padding: 1.25%;
 }
 
 footer {
   clear: both;
   width: 80%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 1.25%;
   background: gray;
   color: white;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.9375em;
   line-height: 20px;
 }
 
