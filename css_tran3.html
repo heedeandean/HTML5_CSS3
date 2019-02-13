@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS3 애니메이션</title>
+    <style>
+      .prod-list {
+        list-style:none;
+        margin:0;
+        padding:0;
+      }
+      .prod-list li {
+        position: relative;
+        float: left;
+        padding: 0;
+        margin: 10px;
+        overflow: hidden;
+      }
+      .prod-list img {
+        margin:0;
+        padding:0;
+        float:left;
+        z-index:5;
+      }   
+      .prod-list .caption {
+        position: absolute;
+        top: 200px;
+        width: 300px;
+        height: 200px;
+        padding-top: 20px;
+        background: rgba(0,0,0,0.6);
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        z-index: 10;
+      }
+      .prod-list li:hover .caption {
+        opacity: 1;
+        transform: translateY(-200px);
+      }
+      .prod-list .caption h1, .prod-list .caption {
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+<!--  상품페이지에 가격 떠오르게 만들기.-->
+  <body>
+    <h1>신상품 목록</h1>
+    <div id="container">
+      <ul class="prod-list">
+        <li>
+          <img src="images/prod1.jpg">
+          <div class="caption">
+            <h2>상품 1</h2>
+            <p>인형</p>
+            <p>가격 : 1,000원</p>
+          </div>
+        </li>
+        <li>
+          <img src="images/prod2.jpg">
+          <div class="caption">
+            <h2>상품 2</h2>
+            <p>가방</p>
+            <p>가격 : 1,000원</p>
+          </div>
+        </li>
+        <li>
+          <img src="images/prod3.jpg">
+          <div class="caption">
+            <h2>상품 3</h2>
+            <p>그릇</p>
+            <p>가격 : 1,000원</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
